@@ -10,6 +10,11 @@ export default new Router({
       path: '/',
       name: 'HelloWorld',
       component: HelloWorld
+    },
+    {
+      path: '/others/:id',
+      name: 'About',
+      component: () => import('@/components/About.js')
     }
   ]
 })

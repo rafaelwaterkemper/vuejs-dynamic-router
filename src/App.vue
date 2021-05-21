@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <router-view/>
+    <div id="routes">
+      <router-link to="/others/novo">Go to hello</router-link>
+    </div>
+    <router-view :key="$route.fullPath"/>
   </div>
 </template>
 
